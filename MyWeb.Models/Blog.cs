@@ -8,10 +8,13 @@ namespace MyWeb.Models
         {
             Owner = new User();
         }
-
+        [Key]
         public int BlogId { get; set; }
+
         [Required]
         public string BlogName { get; set; }
+
+
         public virtual User Owner { get; set; }
     }
 }
