@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using MyWeb.Models;
+using System;
+using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace MyBlog.Web.Controllers
 {
@@ -7,7 +10,10 @@ namespace MyBlog.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            var blogList = new List<Blog>();
+            blogList.Add(new Blog { BlogId = 1, BlogName = "MyBlog1", CreatedBy = "Vidwan", CreatedOn = DateTime.Now, ModifiedBy = "Vidwan", ModifiedOn = DateTime.Now });
+            blogList.Add(new Blog { BlogId = 1, BlogName = "MyBlog2", CreatedBy = "Vidwan", CreatedOn = DateTime.Now, ModifiedBy = "Vidwan", ModifiedOn = DateTime.Now });
+            return View(blogList);
         }
     }
 }
