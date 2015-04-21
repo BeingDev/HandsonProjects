@@ -8,6 +8,7 @@ using System.Data.Entity;
 
 namespace MyWeb.Models
 {
+
     public class BlogContext : DbContext
     {
         public BlogContext()

@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Models
 {
+    [Table("V_Blogs")]
     public class Blog : BaseEntity
     {
         public Blog()

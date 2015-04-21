@@ -1,7 +1,9 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Models
 {
+    [Table("V_Posts")]
     public class Post : BaseEntity
     {
         [Key]
